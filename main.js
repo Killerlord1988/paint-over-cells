@@ -16,6 +16,11 @@ range.addEventListener('input', function () {
 })
 
 buttonAddColor.addEventListener('click', function () {
+  for (let i = 0; i < colors.length; i++) {
+    if (changeColor.value == colors[i]) {
+      return
+    }
+  }
   colors.push(changeColor.value)
   addColorLayout(colors)
   console.log(colors);
