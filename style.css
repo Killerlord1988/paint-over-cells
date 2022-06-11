@@ -1,0 +1,75 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: #111;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.4;
+}
+
+.change-color {
+  display: flex;
+  align-items: center;
+}
+
+.change-color__control {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.color {
+  margin-right: 10px;
+}
+
+.change-color__layout {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+}
+
+.change-color__layout div {
+  min-width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  margin: 5px;
+
+}
+
+.field {
+  display: flex;
+  justify-content: center;
+}
+
+.cell {
+  background-color: #1d1d1d;
+  box-shadow: 0 0 2px #000;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  transition: 4s ease;
+}
+
+.cell:hover {
+  transition-duration: 0s;
+}
